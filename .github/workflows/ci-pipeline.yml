@@ -26,7 +26,7 @@ jobs:
       - name: 테스트 application.yaml 덮어쓰기
         uses: microsoft/variable-substitution@v1
         with:
-          files: ./src/test/resources/application.yaml
+          files: ./src/test/resources/application.yml
         env:
           jwt.issuer: ${{ secrets.TOKEN_ISSUER }}
           jwt.base64-secret: ${{ secrets.TOKEN_SECRET }}
